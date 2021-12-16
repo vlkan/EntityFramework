@@ -32,7 +32,7 @@ namespace Business.Concrete
             this._categoryService = categoryService;
         }
 
-        [SecuredOperation("product.add, admin")]
+        //[SecuredOperation("product.add, admin")]
         [ValidationAspect(typeof(ProductValidator))] //validation
         [CacheRemoveAspect("IProductervice.Get")]
         public IResult Add(Product product)
@@ -67,7 +67,7 @@ namespace Business.Concrete
         [PerformanceAspect(5)]
         public IDataResult<Product> GetById(int productId)
         {
-            return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductID == productId));
+            return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
         }
 
         public IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max)
