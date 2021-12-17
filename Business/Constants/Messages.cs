@@ -21,6 +21,6 @@ namespace Business.Constants
         internal static User PasswordError;
         internal static string SuccessfulLogin;
         internal static string UserAlreadyExists;
-        internal static string AccessTokenCreated;
+        public static string AccessTokenCreated = "Token Created";
     }
 }
