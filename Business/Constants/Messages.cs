@@ -16,11 +16,11 @@ namespace Business.Constants
         public static string SameNameError = "Please change the name. This product already exist.";
         public static string CategoryLimitExceded = "Category Limit Exceded";
         public static string AuthorizationDenied = "No Auth";
-        internal static string UserRegistered;
-        internal static User UserNotFound;
-        internal static User PasswordError;
-        internal static string SuccessfulLogin;
-        internal static string UserAlreadyExists;
-        public static string AccessTokenCreated = "Token Created";
+        public static string UserRegistered = "User Registered";
+        public static string UserNotFound = "User Not Found";
+        public static string PasswordError = "Password Error";
+        public static string SuccessfulLogin = "Successful Login";
+        public static string UserAlreadyExists = "User Already Exist";
+        public static string AccessTokenCreated = "Token Created, Login Success";
     }
 }
